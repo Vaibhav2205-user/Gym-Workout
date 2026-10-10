@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Iron Week: chest, back and legs, run twice</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Big+Shoulders+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#dcdfde;--ink:#111314;--mut:#586062;--card:#eceeed;--acc:#e5392b;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1112;--ink:#ecebe6;--mut:#8d9496;--card:#181b1c;--acc:#ff5a47;--on:#111}}
+:root[data-theme="dark"]{--bg:#0f1112;--ink:#ecebe6;--mut:#8d9496;--card:#181b1c;--acc:#ff5a47;--on:#111}
+*{box-sizing:border-box}html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 'Archivo',system-ui,sans-serif}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:2px solid var(--ink)}
+.logo{font:900 26px 'Big Shoulders Display',Impact,sans-serif;letter-spacing:.5px}header a{color:var(--ink);text-decoration:none;margin-left:18px;font-weight:500}
+h1,h2,.big{font-family:'Big Shoulders Display',Impact,'Arial Narrow',sans-serif;text-transform:uppercase;margin:0;line-height:.92}
+h1{font-size:clamp(54px,12.5vw,140px);font-weight:900;margin:34px 0 18px;letter-spacing:-1px}
+h1 em{font-style:normal;color:var(--acc)}
+.lead{max-width:560px;color:var(--mut);font-size:18px;margin:0 0 34px}
+.strip{display:grid;grid-template-columns:repeat(7,1fr);gap:0;border:2px solid var(--ink);border-radius:6px;overflow:hidden}
+.strip button{all:unset;cursor:pointer;padding:14px 10px 16px;border-right:2px solid var(--ink);min-width:0;position:relative;transition:background .2s,color .2s}
+.strip button:last-child{border:0}.strip button:focus-visible{outline:3px solid var(--acc);outline-offset:-3px}
+.strip button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.d{font:800 28px 'Big Shoulders Display',sans-serif;display:block;text-transform:uppercase}.m{font-size:12.5px;line-height:1.25;display:block;opacity:.8;margin-top:4px}
+.plate{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;border:2px solid currentColor;font:800 13px 'Big Shoulders Display',sans-serif;margin-bottom:8px}
+.today:after{content:"Today";position:absolute;top:8px;right:8px;font-size:10px;font-weight:600;background:var(--acc);color:#fff;padding:1px 6px;border-radius:99px}
+.panel{margin:34px 0 10px;animation:in .3s ease}@keyframes in{from{opacity:0;transform:translateY(8px)}}
+.ph{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.ph h2{font-size:clamp(44px,8vw,84px);font-weight:900}.ph p{margin:6px 0 0;color:var(--mut)}
+.prog{min-width:200px}.prog b{font:800 34px 'Big Shoulders Display';}.bar{height:8px;background:color-mix(in srgb,var(--ink) 15%,transparent);border-radius:9px;overflow:hidden;margin-top:4px}.bar i{display:block;height:100%;background:var(--acc);transition:width .35s}
+.ex{display:grid;grid-template-columns:1fr auto;gap:6px 24px;padding:20px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 25%,transparent)}
+.ex h3{margin:0;font-size:20px;font-weight:600}.ex p{margin:2px 0 0;color:var(--mut);max-width:560px;font-size:15px}
+.spec{text-align:right;font:800 30px 'Big Shoulders Display';white-space:nowrap}.spec small{display:block;font:400 13px 'Archivo';color:var(--mut)}
+.sets{grid-column:1/-1;display:flex;gap:8px;margin-top:8px}
+.sets button{all:unset;cursor:pointer;width:44px;height:44px;border:2px solid var(--ink);border-radius:8px;display:grid;place-items:center;font-weight:600;transition:.15s}
+.sets button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:#fff;transform:scale(1.05)}.sets button:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.rst{background:var(--card);border-radius:10px;padding:26px;margin-top:20px}.rst li{margin:8px 0}
+.link{all:unset;cursor:pointer;color:var(--mut);text-decoration:underline;font-size:14px;margin-top:14px;display:inline-block}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px;margin:12px 0 70px}
+section.g{margin-top:70px;border-top:2px solid var(--ink);padding-top:22px}section.g h2{font-size:clamp(38px,6vw,60px);font-weight:900}
+.cols h3{font:800 26px 'Big Shoulders Display';text-transform:uppercase;margin:0 0 6px}.cols p{margin:0;color:var(--mut)}
+footer{padding:26px 0 40px;color:var(--mut);font-size:13px;border-top:2px solid var(--ink)}
+@media(max-width:720px){.strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}.strip button{flex:0 0 118px;scroll-snap-align:start}.spec{font-size:24px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+<div class="w">
+<header><span class="logo">IRON WEEK</span><nav><a href="#week">The week</a><a href="#how">How to progress</a></nav></header>
+<h1>Three days. <em>Twice.</em> Then rest.</h1>
+<p class="lead">Chest with triceps, back with biceps, legs with shoulders. Run the rotation Monday to Saturday, take Sunday off. Every muscle gets trained twice a week.</p>
+<div id="week"><div class="strip" id="strip" role="group" aria-label="Pick a day"></div><div id="panel"></div></div>
+<section class="g" id="how"><h2>How to progress</h2>
+<div class="cols" style="margin-top:26px">
+<div><h3>Reps first</h3><p>Pick a weight you can lift for the bottom of the rep range with clean form. Add a rep each week until every set hits the top of the range.</p></div>
+<div><h3>Then load</h3><p>Once every set hits the top, add the smallest jump you have (2.5 kg on barbells, 1 to 2 kg on dumbbells) and start the range again.</p></div>
+<div><h3>Stop one or two short</h3><p>Leave one or two reps in reserve on most sets. Go to failure only on the last set of isolation moves. Back off for a week every six to eight weeks.</p></div>
+<div><h3>Recover on purpose</h3><p>Sleep seven to nine hours, eat enough protein across the day, and warm up with two light ramp sets before your first heavy lift.</p></div>
+</div></section>
+<footer>Training guide for healthy adults. Stop any exercise that causes sharp pain, and see a professional for injuries or medical conditions.</footer>
+</div>
+<script>
+const A={n:'Chest + Triceps',t:'CT',ex:[
+['Barbell bench press',4,'6–8','2–3 min','Pinch shoulder blades together, lower to mid-chest, press up and slightly back.'],
+['Incline dumbbell press',3,'8–10','2 min','Bench at about 30°. Lower until elbows are just below the bench, press over upper chest.'],
+['Cable fly',3,'12–15','60–90 s','Soft elbows, sweep hands together in an arc, pause and squeeze.'],
+['Dips or machine chest press',3,'8–12','90 s','Lean slightly forward on dips, stop when shoulders feel pinched.'],
+['Cable pushdown',3,'10–12','60–90 s','Elbows pinned to your ribs, extend fully, control the way up.'],
+['Overhead rope extension',3,'10–12','60–90 s','Elbows point forward and stay narrow, stretch deep behind your head.']]};
+const B={n:'Back + Biceps',t:'BB',ex:[
+['Pull-ups or lat pulldown',4,'6–10','2 min','Start each rep by pulling shoulders down, drive elbows to your ribs.'],
+['Barbell row',4,'6–8','2–3 min','Hinge to a flat back, row to your lower ribs, no body swing.'],
+['Seated cable row',3,'10–12','90 s','Sit tall, squeeze shoulder blades together, let them stretch forward on the way back.'],
+['Straight-arm pulldown',3,'12–15','60 s','Arms nearly straight, sweep the bar to your thighs using your lats.'],
+['EZ-bar curl',3,'8–10','90 s','Elbows fixed at your sides, full range, no leaning back.'],
+['Hammer curl',3,'10–12','60–90 s','Neutral grip, lift without moving the upper arm.']]};
+const C={n:'Legs + Shoulders',t:'LS',ex:[
+['Back squat',4,'6–8','2–3 min','Brace your core, knees track over toes, descend to at least parallel.'],
+['Romanian deadlift',3,'8–10','2 min','Push hips back with soft knees, keep the bar close, stop at a hamstring stretch.'],
+['Leg press',3,'10–12','2 min','Feet shoulder-width, lower under control, do not lock your knees.'],
+['Seated leg curl',3,'10–12','90 s','Pin hips down, curl through the full range.'],
+['Standing calf raise',4,'12–15','60 s','Full stretch at the bottom, pause at the top.'],
+['Overhead press',3,'6–8','2 min','Squeeze glutes, press the bar over mid-foot, ribs down.'],
+['Dumbbell lateral raise',4,'12–15','60 s','Lead with the elbows to shoulder height, lower slowly.']]};
+const D=[A,B,C,A,B,C,null],N=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],F=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+const td=(new Date().getDay()+6)%7;let sel=td;
+const pd=n=>String(n).padStart(2,'0'),mk=(()=>{const d=new Date();d.setDate(d.getDate()-td);return d.getFullYear()+'-'+pd(d.getMonth()+1)+'-'+pd(d.getDate())})();
+let st={};try{st=JSON.parse(localStorage.getItem('ironweek')||'{}')}catch(e){}
+const save=()=>{try{localStorage.setItem('ironweek',JSON.stringify(st))}catch(e){}};
+const key=(i,j)=>mk+'|'+sel+'|'+i+'|'+j;
+function strip(){document.getElementById('strip').innerHTML=D.map((x,i)=>`<button class="${i==td?'today':''}" aria-pressed="${i==sel}" onclick="sel=${i};draw()"><span class=plate>${x?x.t:'zz'}</span><span class=d>${N[i]}</span><span class=m>${x?x.n:'Rest'}</span></button>`).join('')}
+function panel(){const x=D[sel],p=document.getElementById('panel');
+if(!x){p.innerHTML=`<div class=panel><div class=ph><div><h2>${F[sel]}: rest</h2><p>Growth happens between sessions, so this day is part of the plan.</p></div></div><div class=rst><ul><li>Walk for 20 to 30 minutes, easy pace.</li><li>Ten minutes of mobility for hips, shoulders and upper back.</li><li>Prep meals and lay out your gear for Monday.</li></ul></div></div>`;return}
+const tot=x.ex.reduce((a,e)=>a+e[1],0);let dn=0;x.ex.forEach((e,i)=>{for(let j=0;j<e[1];j++)if(st[key(i,j)])dn++});
+p.innerHTML=`<div class=panel><div class=ph><div><h2>${F[sel]}: ${x.n}</h2><p>${x.ex.length} exercises, ${tot} working sets, about 60 to 75 minutes</p></div><div class=prog><b id=pn>${dn}/${tot}</b> sets done<div class=bar><i id=pb style="width:${dn/tot*100}%"></i></div></div></div>
+${x.ex.map((e,i)=>`<div class=ex><div><h3>${e[0]}</h3><p>${e[4]}</p></div><div class=spec>${e[1]} × ${e[2]}<small>rest ${e[3]}</small></div><div class=sets>${Array.from({length:e[1]},(_,j)=>`<button aria-pressed="${!!st[key(i,j)]}" aria-label="Set ${j+1} of ${e[0]}" onclick="tg(${i},${j},this)">${j+1}</button>`).join('')}</div></div>`).join('')}
+<button class=link onclick="rs()">Clear this day's ticks</button></div>`}
+function tg(i,j,b){const k=key(i,j);st[k]=!st[k];if(!st[k])delete st[k];save();b.setAttribute('aria-pressed',!!st[k]);const x=D[sel];let dn=0,tot=0;x.ex.forEach((e,a)=>{for(let c=0;c<e[1];c++){tot++;if(st[key(a,c)])dn++}});document.getElementById('pn').textContent=dn+'/'+tot;document.getElementById('pb').style.width=dn/tot*100+'%'}
+function rs(){Object.keys(st).forEach(k=>{if(k.startsWith(mk+'|'+sel+'|'))delete st[k]});save();panel()}
+function draw(){strip();panel()}draw();
+</script></body></html>
